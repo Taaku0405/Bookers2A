@@ -1,0 +1,19 @@
+<p id="notice"></p>
+ <div class="container">
+ <div class="row">
+ <div class="col-md-3">
+
+ <h2>Book detail</h2>
+ <table class="table">
+ <tbody><tr>
+ <td><a href="/users/3175">
+ </tr>
+ </tbody></table>
+<td>
+ <%= link_to "Edit", edit_book_path(current_user.id),class: "btn btn-sm btn-success Edit" %>
+</td>
+<td>
+ <%= link_to "Destroy", books_path, method: :delete, class: "btn btn-sm btn-danger Destroy", "data-confirm" => "本当に削除しますか？" %>
+ </td>
+ </tbody>
+ </table>
